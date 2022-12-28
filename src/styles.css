@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply px-8 pb-2 pt-3 font-bold rounded-full border-b-2 text-gray-100 w-full sm:w-auto shadow-xl hover:opacity-75 transition ease-in duration-150;
+}
+
+body {
+    background: url("images/bg-header-mobile.png") no-repeat;
+}
+@media (min-width: 640px) {
+    body {
+        background: url("images/bg-header-desktop.png") no-repeat;
+    }
+}
+
+a:hover {
+    filter: invert(65%) sepia(27%) saturate(1060%) hue-rotate(122deg) brightness(90%) contrast(87%);
+}
